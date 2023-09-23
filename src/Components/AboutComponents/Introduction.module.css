@@ -1,0 +1,52 @@
+.introWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+}
+
+.introText{
+    margin: 0;
+    font-weight: 500;
+}
+
+.blurb {
+    margin-top: 0;
+}
+
+.name{
+    font-size: clamp(48px, 8vw, 80px);
+    margin: -20px -2px;
+    
+}
+
+.role{
+    margin-bottom: 9px;
+    font-size: 20px;
+    color: var(--subheading-text-lightgrey);
+    font-weight: 500;
+}
+
+.linkContainer{
+    
+}
+
+.links{
+    color: #3965ff;
+    height: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.links:hover{
+    color: #7896FF;
+}
+
+@media only screen and (max-width: 600px) {
+    .introText{
+        margin-bottom: 10px;
+    }
+    .name{
+        margin-left: -1px;
+            }
+  }

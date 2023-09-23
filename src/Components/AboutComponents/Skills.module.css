@@ -1,0 +1,34 @@
+.skillContainer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 4rem;
+    padding: 6px 10px;
+    background-color: #1b295b;
+    border: 2px solid #1b295b;
+    border-radius: 9999px;
+    margin: 5px 20px 5px 0px;
+}
+
+.pillText{
+ margin: 0; 
+ color: var(--highlight-blue);  
+}
+
+.skillLogo {
+    height: 1rem;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .pill{
+        margin: 5px 5px 5px 0px;
+    }
+  }

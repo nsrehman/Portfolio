@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 2rem;
+  }
+
+.title {
+    margin-top: 0;
+}
+
+.jobDescription{
+    list-style: square;  
+}
+
+.jobDescription li{
+    display: flex;
+}
+
+.jobDescription li p{
+    margin-top: 0;
+}
+
+.jobDescription li::before{
+    content: "▹ ";
+    margin: 0 1rem;
+}
+
+.timeline{
+    margin: 0.5rem 3rem 0 0;
+}
+
+.timelineMobile{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: unset;
+    }
+
+    .timeline {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+
+    .timelineMobile{
+        visibility: visible;
+        height: unset;
+        width: unset;
+    }
+  }

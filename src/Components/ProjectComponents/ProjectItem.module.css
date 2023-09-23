@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.projectContainer {
+  display: flex;
+  margin: 5px 0px 5px 30px;
+  min-height: 330px;
+}
+
+.projectHeader {
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  height: fit-content;
+  margin: 0;
+}
+
+.description {
+  height: fit-content;
+  margin: 0;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: auto; */
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 915px) {
+  .projectContainer{
+    min-height: 420px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectContainer{
+    min-height: 570px;
+  }
+}

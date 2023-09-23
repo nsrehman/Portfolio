@@ -1,0 +1,39 @@
+.sectionHeader {
+  position: relative;
+  margin: 0 0 0 5rem;
+}
+
+.sectionHeader:before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background: var(--heading-text-offwhite);
+  left: -5rem;
+  top: 50%;
+  position: absolute;
+}
+
+.headerBackDrop{
+  margin: 0 0 32px 5vw;
+}
+
+  
+  @media only screen and (max-width: 600px) {
+    .sectionHeader{
+      margin-left: 0;
+      padding: 0.5rem 0;
+    }
+
+    .headerBackDrop {
+      position: sticky;
+      width: 100%;
+      padding: 0 0 0 calc(5vw + 5rem);
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      backdrop-filter: blur(8px);
+      margin: 0;
+    }
+  }
+  

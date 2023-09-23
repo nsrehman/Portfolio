@@ -1,0 +1,36 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  width: fit-content;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--heading-text-offwhite);
+  font-weight: 700;
+}
+
+.bar{
+  background-color: var(--heading-text-offwhite);
+  height: 2px;
+  margin-left: 10px;
+}
+
+.navLink:visited {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    visibility: hidden;
+  }
+}

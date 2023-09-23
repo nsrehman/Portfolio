@@ -1,0 +1,10 @@
+.section {
+  margin: 0 5vw 20vh 5vw;
+  max-width: 65vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .section {
+    max-width: 100%;
+  }
+}

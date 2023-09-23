@@ -1,0 +1,57 @@
+.tab{
+    display: grid;
+    grid-template-columns: 1fr 2.5px;
+}
+
+.button{
+    background-color: transparent;
+    border-width: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-size: 200%;
+    transition: 0.5s;
+    color: var(--body-text-grey);
+}
+
+.activeButton{
+    color: var(--highlight-blue)
+}
+
+.button:hover{
+    background-color: #2A2D3D;
+    cursor: pointer;
+}
+
+.activeTabIndicator{
+    width: 2.5px;
+    grid-column: 2;
+    background-color: var(--highlight-blue);
+    border-radius: 9999px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .tab{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3px;
+    
+    }
+
+    .button{
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .button:hover{
+        background-position: unset;
+    }
+
+    .activeTabIndicator{
+        grid-area:2/1;
+        width: auto;
+        height: 2.5px;
+    }
+  }
